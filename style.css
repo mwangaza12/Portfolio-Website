@@ -1,7 +1,6 @@
 /* Custom Styles */
 body {
     padding-top: 56px;
-    width: fit-content;
   }
   
   .navbar {
@@ -47,11 +46,8 @@ body {
   .main-section {
     padding: 20px;
   }
-  
-  .profile-pic {
-    border-radius: 50%;
-    max-width: 200px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  .container{
+    max-width: 960px;
   }
   
   .footer {
@@ -74,9 +70,23 @@ body {
     .navbar {
       padding: 20px;
     }
+    .navbar-expand-lg .container {
+      padding-right: 0;
+      padding-left: 0;
+    }
   }
   
   @media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    html,body{
+      
+    }
     .navbar-expand-lg .navbar-nav .nav-link {
       padding-right: 20px;
       padding-left: 20px;
