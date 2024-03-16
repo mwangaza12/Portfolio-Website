@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mwangaza - Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-primary bg-primary">
+    <div class="container">
+      <a class="navbar-brand text-white" href="#">Mwangaza</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-white active" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <!-- Home Section -->
+<section id="home" class="py-5 text-center">
+    <div class="container">
+      <h1 class="display-4 mb-4 animate__animated animate__fadeInDown">Welcome to My Portfolio</h1>
+      <p class="lead">I am an IT student passionate about creating awesome IT solutions and experiences.</p>
+    </div>
+  </section>
+  
+
+  <!-- About Section -->
+<section id="about" class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 order-2 order-lg-1">
+          <h2 class="display-5 mb-4 animate__animated animate__fadeInLeft">Meet the Dreamer</h2>
+          <p class="lead animate__animated animate__fadeInLeft bg-light rounded p-3">Hey there! I'm Joseph Mwangaza, a curious soul fueled by pixels and dreams. From a young age, I've been captivated by the digital universe. My love for creating goes beyond just coding; it's about crafting experiences that stir emotions and spark imagination.</p>
+          <p class="lead animate__fadeInLeft bg-info rounded p-3">When I'm not immersed in lines of code, you'll find me lost in a sci-fi novel, exploring new hiking trails, or sketching the next big idea. I believe that technology should not only solve problems but also inspire wonder.</p>
+          <p class="animate__animated animate__fadeInLeft">Join me on this journey, where the realms of imagination and innovation collide!</p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-4">
+            <a href="#" class="btn btn-primary me-md-2">Get in Touch</a>
+            <a href="#" class="btn btn-outline-primary">View Projects</a>
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 mb-3">
+          <img src="pic.jfif" alt="About Me" class="img-fluid rounded animate__animated animate__fadeInRight" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Project Section -->
+  <section id="portfolio" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="display-5 text-center mb-5">My Projects</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="ecommerce.jfif" class="card-img-top" alt="Project 1">
+            <div class="card-body">
+              <h5 class="card-title">Ecommerce Website</h5>
+              <p class="card-text">Explore, Shop, and Discover. Your online destination for endless choices.</p>
+              <a href="#" class="btn btn-primary">View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="IoT.jfif" class="card-img-top" alt="Project 2">
+            <div class="card-body">
+              <h5 class="card-title">iHome Tech</h5>
+              <p class="card-text">Empowering homes with smart solutions. Connect, control, simplify everyday living.</p>
+              <a href="#" class="btn btn-primary">View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="cloud.jfif" class="card-img-top" alt="Project 3">
+            <div class="card-body">
+              <h5 class="card-title">Online Automation</h5>
+              <p class="card-text">Unleash the power of cloud computing. Scalable, efficient, seamless solutions.</p>
+              <a href="#" class="btn btn-primary">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="display-5 text-center mb-5">Contact Me</h2>
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="email">
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="5"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <p>&copy; 2024 Joseph Mwangaza | IT Student</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
