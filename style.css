@@ -1,6 +1,7 @@
 /* Custom Styles */
 body {
     padding-top: 56px;
+    width: fit-content;
   }
   
   .navbar {
