@@ -90,4 +90,4 @@ To update your portfolio content:
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 
-⭐️ From [Your Name](https://github.com/mwangaza12)
+⭐️ From [Joseph Mwangaza](https://github.com/mwangaza12)
