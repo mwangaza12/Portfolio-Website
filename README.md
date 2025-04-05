@@ -17,7 +17,6 @@ Welcome to the repository for my personal portfolio website. This site showcases
 - **Framework**: React.js
 - **Styling**: Tailwind CSS
 - **Deployment**: Netlify/Vercel
-- **Form Handling**: Netlify Forms/FormSpree
 - **Animation**: Framer Motion
 
 ## 📋 Getting Started
