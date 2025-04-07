@@ -8,8 +8,6 @@ Welcome to the repository for my personal portfolio website. This site showcases
 - Project showcase with descriptions and live demos
 - Skills and technology expertise visualization
 - Contact form for professional inquiries
-- Resume/CV download option
-- Dark/light mode toggle
 
 ## 🛠️ Technologies Used
 
