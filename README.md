@@ -1,6 +1,6 @@
 # My Portfolio Website
 
-Welcome to the repository for my personal portfolio website. This site showcases my projects, skills, and professional experience.
+Welcome to the repository for my personal portfolio website. This site showcases my projects and skills.
 
 ## 🚀 Features
 
