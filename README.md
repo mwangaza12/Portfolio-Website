@@ -1,4 +1,4 @@
-# My Portfolio Website
+# Portfolio Website
 
 Welcome to the repository for my personal portfolio website. This site showcases my projects and skills.
 
