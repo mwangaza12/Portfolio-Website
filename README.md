@@ -13,7 +13,7 @@ Welcome to the repository for my personal portfolio website. This site showcases
 
 - **Frontend**: HTML5, CSS3, JavaScript/TypeScript
 - **Framework**: React.js
-- **Styling**: Tailwind CSS
+- **Styling**: bootstrap
 - **Deployment**: Netlify/Vercel
 - **Animation**: Framer Motion
 
