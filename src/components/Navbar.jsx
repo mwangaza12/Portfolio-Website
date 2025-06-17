@@ -29,7 +29,7 @@ export default function Navbar(){
               <a href="#services" className="text-white hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">Services</a>
               <a href="#projects" className="text-white hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">Projects</a>
               <a href="#skills" className="text-white hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">Skills</a>
-              <a href="#testimonials" className="text-white hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">Testimonials</a>
+              <a href="#certifications" className="text-white hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">Certifications</a>
               <a href="#contact" className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors">Contact</a>
             </div>
           </div>
@@ -54,7 +54,7 @@ export default function Navbar(){
           <a href="#services" onClick={() => setIsOpen(false)} className="text-white hover:text-blue-400 block px-3 py-2 rounded-md text-base font-medium">Services</a>
           <a href="#projects" onClick={() => setIsOpen(false)} className="text-white hover:text-blue-400 block px-3 py-2 rounded-md text-base font-medium">Projects</a>
           <a href="#skills" onClick={() => setIsOpen(false)} className="text-white hover:text-blue-400 block px-3 py-2 rounded-md text-base font-medium">Skills</a>
-          <a href="#testimonials" onClick={() => setIsOpen(false)} className="text-white hover:text-blue-400 block px-3 py-2 rounded-md text-base font-medium">Testimonials</a>
+          <a href="#certifications" onClick={() => setIsOpen(false)} className="text-white hover:text-blue-400 block px-3 py-2 rounded-md text-base font-medium">Certifications</a>
           <a href="#contact" onClick={() => setIsOpen(false)} className="bg-blue-500 hover:bg-blue-600 text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
         </div>
       </div>

@@ -19,7 +19,7 @@ export default function Hero() {
               <span className="typewriter">Full Stack Developer</span>
             </div>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-12">
-              I build elegant, responsive, and high-performance web applications using modern technologies.
+              I create reliable, fast, and maintainable solutions through logic, structure, and intent.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="#projects" className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-md font-medium transition-colors">View My Work</a>

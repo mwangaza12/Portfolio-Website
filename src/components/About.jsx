@@ -56,18 +56,13 @@ export default function About() {
               <div>
                 <h3 className="text-2xl font-bold text-blue-400 mb-4">Joseph Mwangaza Mokoli</h3>
                 <p className="text-gray-300 mb-6">
-                  I'm a passionate software developer with over 5 years of experience building web applications 
-                  and digital products. I specialize in creating engaging, high-performance applications 
-                  that solve real-world problems.
+                    I don’t just write code — I design systems, solve problems, and bring ideas to life. With over 3 years in software development, I’ve shipped products that power startups, streamline businesses, and delight users.
                 </p>
                 <p className="text-gray-300 mb-6">
-                  My journey began with an Information Technology degree, followed by work at tech startups 
-                  and established companies, where I honed my skills in full-stack development. 
-                  I love learning new technologies and applying them to create innovative solutions.
+                    My roots in Information Technology gave me a solid foundation, but curiosity took me further. Whether it’s building sleek frontend interfaces, architecting APIs, or automating workflows, I thrive where code meets creativity.
                 </p>
                 <p className="text-gray-300 mb-8">
-                  When I'm not coding, you'll find me hiking, reading tech blogs, or contributing 
-                  to open-source projects. I'm always open to new opportunities and collaborations.
+                    Off-screen, I find clarity on hiking trails, inspiration in open-source communities, and energy in collaboration. I’m always up for building something impactful — or tearing down bugs at 2 AM with good coffee and better ideas.
                 </p>
                 
                 <div className="flex flex-col sm:flex-row gap-4">
@@ -75,7 +70,7 @@ export default function About() {
                     href="#" 
                     className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-md font-medium transition-colors flex items-center justify-center"
                   >
-                    Download CV
+                    Download Resume
                   </a>
                   <a 
                     href="#contact" 

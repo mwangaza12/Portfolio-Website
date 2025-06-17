@@ -4,10 +4,10 @@ import About from './components/About';
 import Services from './components/Services';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
-import Testimonials from './components/Testimonial';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import "./App.css";
+import Certications from './components/Certifications';
 
 export default function App() {
   return (
@@ -44,7 +44,7 @@ export default function App() {
       <Services />
       <Projects />
       <Skills />
-      <Testimonials />
+      <Certications />
       <Contact />
       <Footer />
     </div>

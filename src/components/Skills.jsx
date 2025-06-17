@@ -38,19 +38,19 @@ export default function Skills(){
     const skills = [
         { 
           category: "Frontend", 
-          items: ["React", "TypeScript", "Next.js", "Tailwind CSS", "Redux", "SCSS"] 
+          items: ["React", "TypeScript", "JavaScript", "Tailwind CSS", "Redux", "SCSS"] 
         },
         { 
           category: "Backend", 
-          items: ["Node.js", "Express", "Python", "Django", "GraphQL", "Laravel"] 
+          items: ["Node.js", "Express", "Drizzle ORM", "REST API", "GraphQL", "Laravel","PHP"] 
         },
         { 
           category: "Database", 
-          items: ["MongoDB", "PostgreSQL", "Firebase", "Redis"] 
+          items: ["MYSQL", "PostgreSQL", "Firebase", "Redis", "SQLite", "Oracle"] 
         },
         { 
           category: "DevOps", 
-          items: ["Docker", "AWS", "CI/CD", "Kubernetes", "Git"] 
+          items: ["Docker", "AWS", "CI/CD", "Kubernetes", "Git", "Github", "Jest"] 
         }
       ];
     return (
