@@ -1,5 +1,6 @@
 import { useRef, useState, useEffect } from "react";
 import pic from "../assets/mine.JPG";
+import me from "../assets/me.jpeg"
 export default function About() {
     const useInView = (ref) => {
         const [isInView, setIsInView] = useState(false);
@@ -45,7 +46,7 @@ export default function About() {
             <AnimatedSection>
               <div className="relative rounded-lg overflow-hidden shadow-xl">
                 <img
-                  src={pic}
+                  src={me}
                   alt="Developer Profile"
                   className="w-full h-96 object-cover"
                 />
@@ -56,7 +57,7 @@ export default function About() {
               <div>
                 <h3 className="text-2xl font-bold text-blue-400 mb-4">Joseph Mwangaza Mokoli</h3>
                 <p className="text-gray-300 mb-6">
-                    I don’t just write code — I design systems, solve problems, and bring ideas to life. With over 3 years in software development, I’ve shipped products that power startups, streamline businesses, and delight users.
+                    I don’t just write code — I design systems, solve problems, and bring ideas to life. With over 1 year in software development, I’ve shipped products that power startups, streamline businesses, and delight users.
                 </p>
                 <p className="text-gray-300 mb-6">
                     My roots in Information Technology gave me a solid foundation, but curiosity took me further. Whether it’s building sleek frontend interfaces, architecting APIs, or automating workflows, I thrive where code meets creativity.

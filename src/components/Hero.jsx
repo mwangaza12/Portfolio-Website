@@ -13,10 +13,10 @@ export default function Hero() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
           <div className="text-center">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6">
-              <span className="inline-block animate-bounce">Hi,</span> I'm <span className="text-blue-400">Joseph Mokoli</span>
+              <span className="inline-block animate-bounce">Hi,</span> I'm <span className="text-blue-400">Joseph Mwangaza</span>
             </h1>
             <div className="text-xl sm:text-2xl text-gray-300 mb-8">
-              <span className="typewriter">Full Stack Developer</span>
+              <span className="typewriter">Software Developer</span>
             </div>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-12">
               I create reliable, fast, and maintainable solutions through logic, structure, and intent.
