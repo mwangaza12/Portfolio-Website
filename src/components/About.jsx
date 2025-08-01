@@ -1,5 +1,4 @@
 import { useRef, useState, useEffect } from "react";
-import pic from "../assets/mine.JPG";
 import me from "../assets/me.jpeg"
 export default function About() {
     const useInView = (ref) => {
@@ -40,7 +39,7 @@ export default function About() {
     return (
       <section id="about" className="py-20 bg-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-16">About Me</h2>
+          <h2 className="text-xl lg:text-3xl md:text-4xl font-bold text-center text-white mb-16">About Me</h2>
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <AnimatedSection>
@@ -55,7 +54,7 @@ export default function About() {
             
             <AnimatedSection>
               <div>
-                <h3 className="text-2xl font-bold text-blue-400 mb-4">Joseph Mwangaza Mokoli</h3>
+                <h3 className="text-md lg:text-2xl font-bold text-blue-400 mb-4">Joseph Mwangaza Mokoli</h3>
                 <p className="text-gray-300 mb-6">
                     I don’t just write code — I design systems, solve problems, and bring ideas to life. With over 1 year in software development, I’ve shipped products that power startups, streamline businesses, and delight users.
                 </p>

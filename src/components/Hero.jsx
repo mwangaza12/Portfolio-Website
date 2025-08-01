@@ -18,7 +18,7 @@ export default function Hero() {
             <div className="text-xl sm:text-2xl text-gray-300 mb-8">
               <span className="typewriter">Software Developer</span>
             </div>
-            <p className="text-gray-300 max-w-2xl mx-auto mb-12">
+            <p className="text-gray-300 max-w-2xl mx-auto mb-12 lg:text-xl">
               I create reliable, fast, and maintainable solutions through logic, structure, and intent.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
