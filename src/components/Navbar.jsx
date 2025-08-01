@@ -26,7 +26,7 @@ export default function Navbar(){
             <div className="ml-10 flex items-baseline space-x-4">
               <a href="#home" className="text-white hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
               <a href="#about" className="text-white hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">About</a>
-              <a href="#services" className="text-white hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">Services</a>
+              <a href="#experience" className="text-white hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">Services</a>
               <a href="#projects" className="text-white hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">Projects</a>
               <a href="#skills" className="text-white hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">Skills</a>
               <a href="#certifications" className="text-white hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">Certifications</a>
@@ -51,7 +51,7 @@ export default function Navbar(){
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
           <a href="#home" onClick={() => setIsOpen(false)} className="text-white hover:text-blue-400 block px-3 py-2 rounded-md text-base font-medium">Home</a>
           <a href="#about" onClick={() => setIsOpen(false)} className="text-white hover:text-blue-400 block px-3 py-2 rounded-md text-base font-medium">About</a>
-          <a href="#services" onClick={() => setIsOpen(false)} className="text-white hover:text-blue-400 block px-3 py-2 rounded-md text-base font-medium">Services</a>
+          <a href="#experience" onClick={() => setIsOpen(false)} className="text-white hover:text-blue-400 block px-3 py-2 rounded-md text-base font-medium">Services</a>
           <a href="#projects" onClick={() => setIsOpen(false)} className="text-white hover:text-blue-400 block px-3 py-2 rounded-md text-base font-medium">Projects</a>
           <a href="#skills" onClick={() => setIsOpen(false)} className="text-white hover:text-blue-400 block px-3 py-2 rounded-md text-base font-medium">Skills</a>
           <a href="#certifications" onClick={() => setIsOpen(false)} className="text-white hover:text-blue-400 block px-3 py-2 rounded-md text-base font-medium">Certifications</a>

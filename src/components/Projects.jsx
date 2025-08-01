@@ -77,7 +77,7 @@ export default function Projects() {
       title: "School Management System",
       description:
         "Comprehensive educational platform to manage students, staff, classes, finances and academic records with advanced reporting.",
-      technologies: ["Node.js", "Express", "MongoDB"],
+      technologies: ["Laravel", "Filament", "MYSQL","PHP"],
       image:
         "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=400&h=300&fit=crop&crop=center",
       github: "https://github.com/mwangaza12/school-management-system",
@@ -125,14 +125,11 @@ export default function Projects() {
         <AnimatedSection className="text-center mb-16">
           <div className="inline-flex items-center gap-2 bg-blue-500/10 text-blue-400 px-4 py-2 rounded-full text-sm font-medium mb-4 border border-blue-500/20">
             <Code className="w-4 h-4" />
-            Portfolio
+            Projects
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
             Featured Projects
           </h2>
-          <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-            A collection of projects showcasing my expertise in full-stack development and system architecture
-          </p>
         </AnimatedSection>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -228,21 +225,6 @@ export default function Projects() {
             </AnimatedSection>
           ))}
         </div>
-
-        {/* Call to Action */}
-        <AnimatedSection delay={600} className="text-center mt-16">
-          <div className="bg-gradient-to-r from-gray-900/50 to-gray-800/50 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-8">
-            <h3 className="text-2xl font-bold text-white mb-4">
-              Interested in collaborating?
-            </h3>
-            <p className="text-gray-400 mb-6 max-w-lg mx-auto">
-              I'm always open to discussing new opportunities and innovative projects
-            </p>
-            <button className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-lg font-medium transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl">
-              Get In Touch
-            </button>
-          </div>
-        </AnimatedSection>
       </div>
     </section>
   );

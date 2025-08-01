@@ -46,13 +46,13 @@ export default function Experience() {
   const experiences = [
     {
       icon: <GraduationCap size={28} />,
-      title: "Teach@give Bootcamp",
+      title: "Teach2give Bootcamp",
       subtitle: "Software Engineering Trainee",
-      period: "2024",
-      location: "Remote",
+      period: "2025",
+      location: "On-Site",
       description:
         "Completed an immersive software engineering bootcamp focused on full-stack development. Gained hands-on experience building web applications, mastering modern frameworks, and working on collaborative projects.",
-      skills: ["React", "Node.js", "JavaScript", "Full-Stack Development"],
+      skills: ["React", "Node.js", "Typescript", "Full-Stack Development"],
       achievements: [
         "Built 5+ full-stack applications",
         "Collaborated with cross-functional teams",
@@ -63,11 +63,11 @@ export default function Experience() {
       icon: <Code size={28} />,
       title: "Freelance Developer",
       subtitle: "Web Developer",
-      period: "2024 – 2024",
-      location: "Remote",
+      period: "2024",
+      location: "On-Site",
       description:
         "Worked with clients on a variety of projects, from landing pages to complex dashboards. Delivered solutions that are fast, scalable, and responsive.",
-      skills: ["Laravel", "Tailwind CSS", "MySQL", "API Integration"],
+      skills: ["Laravel", "Tailwind CSS", "MySQL", "API Integration", "Filament"],
       achievements: [
         "Developed and deployed School Management System",
         "Implemented secure authentication flows",
@@ -105,9 +105,6 @@ export default function Experience() {
           <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-white via-blue-100 to-purple-100 bg-clip-text text-transparent mb-6">
             Experience & Growth
           </h2>
-          <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-            Transforming passion into expertise through immersive learning and hands-on development
-          </p>
         </AnimatedSection>
 
         {/* Grid with 2 cards in a row */}
