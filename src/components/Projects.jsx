@@ -68,9 +68,9 @@ export default function Projects() {
       image: restaurant,
       github:
         "https://github.com/mwangaza12/restaurant_management_system_backend/",
-      live: "#",
+      live: "https://restaurnat-system.netlify.app/",
       category: "Business",
-      status: "Development",
+      status: "Live",
     },
     {
       id: 3,
