@@ -3,111 +3,155 @@ import { ExternalLink, Github, Code, Database, Globe } from "lucide-react";
 import restaurant from "../assets/restaurant.png";
 import medical from "../assets/medical.png";
 
-export default function Projects() {
-  const useInView = (ref) => {
-    const [isInView, setIsInView] = useState(false);
+// Once you have screenshots for the new projects, save them in src/assets,
+// uncomment the matching import, and replace `image: null` with the variable.
+// import vehicle from "../assets/vehicle.png";
+// import ehr from "../assets/ehr.png";
+// import mchango from "../assets/mchango.png";
 
-    useEffect(() => {
-      if (!ref.current) return;
+const useInView = (ref) => {
+  const [isInView, setIsInView] = useState(false);
 
-      const observer = new IntersectionObserver(
-        ([entry]) => {
-          setIsInView(entry.isIntersecting);
-        },
-        { threshold: 0.1 }
-      );
+  useEffect(() => {
+    const node = ref.current;
+    if (!node) return;
 
-      observer.observe(ref.current);
-
-      return () => {
-        if (ref.current) {
-          observer.unobserve(ref.current);
-        }
-      };
-    }, [ref]);
-
-    return isInView;
-  };
-
-  const AnimatedSection = ({ children, className, delay = 0 }) => {
-    const ref = useRef(null);
-    const isInView = useInView(ref);
-
-    return (
-      <div
-        ref={ref}
-        className={`transition-all duration-1000 ${
-          isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-        } ${className || ""}`}
-        style={{ transitionDelay: `${delay}ms` }}
-      >
-        {children}
-      </div>
+    const observer = new IntersectionObserver(
+      ([entry]) => setIsInView(entry.isIntersecting),
+      { threshold: 0.1 }
     );
-  };
 
-  const projects = [
-    {
-      id: 1,
-      title: "Medical Appointment Booking System",
-      description:
-        "A comprehensive web platform for booking medical appointments with real-time availability and intelligent scheduling system.",
-      technologies: ["React", "Node.js", "Azure", "Express"],
-      image: medical,
-      github: "https://github.com/mwangaza12/meditime_frontend",
-      live: "https://white-sea-09d82b110.2.azurestaticapps.net/",
-      category: "Healthcare",
-      status: "Live",
-    },
-    {
-      id: 2,
-      title: "Restaurant Management System",
-      description:
-        "Full-stack backend system for managing restaurant operations including reservations, orders, menu items, and staff coordination.",
-      technologies: ["Node.js", "Express", "Redux", "PostgreSQL"],
-      image: restaurant,
-      github:
-        "https://github.com/mwangaza12/restaurant_management_system_backend/",
-      live: "https://restaurnat-system.netlify.app/",
-      category: "Business",
-      status: "Live",
-    },
-    {
-      id: 3,
-      title: "School Management System",
-      description:
-        "Comprehensive educational platform to manage students, staff, classes, finances and academic records with advanced reporting.",
-      technologies: ["Laravel", "Filament", "MYSQL","PHP"],
-      image:
-        "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=400&h=300&fit=crop&crop=center",
-      github: "https://github.com/mwangaza12/school-management-system",
-      live: "#",
-      category: "Education",
-      status: "Completed",
-    },
-  ];
+    observer.observe(node);
 
-  const getIcon = (tech) => {
-    if (tech.includes("React") || tech.includes("Node"))
-      return <Code className="w-3 h-3" />;
-    if (tech.includes("MongoDB") || tech.includes("PostgreSQL"))
-      return <Database className="w-3 h-3" />;
-    return <Globe className="w-3 h-3" />;
-  };
+    return () => observer.unobserve(node);
+  }, [ref]);
 
-  const getStatusColor = (status) => {
-    switch (status) {
-      case "Live":
-        return "bg-green-500/20 text-green-400 border-green-500/30";
-      case "Development":
-        return "bg-yellow-500/20 text-yellow-400 border-yellow-500/30";
-      case "Completed":
-        return "bg-blue-500/20 text-blue-400 border-blue-500/30";
-      default:
-        return "bg-gray-500/20 text-gray-400 border-gray-500/30";
-    }
-  };
+  return isInView;
+};
 
+const AnimatedSection = ({ children, className, delay = 0 }) => {
+  const ref = useRef(null);
+  const isInView = useInView(ref);
+
+  return (
+    <div
+      ref={ref}
+      className={`transition-all duration-1000 ${
+        isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+      } ${className || ""}`}
+      style={{ transitionDelay: `${delay}ms` }}
+    >
+      {children}
+    </div>
+  );
+};
+
+const projects = [
+  {
+    id: 1,
+    title: "Medical Appointment Booking System",
+    description:
+      "A comprehensive web platform for booking medical appointments with real-time availability and intelligent scheduling system.",
+    technologies: ["React", "Node.js", "Azure", "Express"],
+    image: medical,
+    github: "https://github.com/mwangaza12/meditime_frontend",
+    live: "https://white-sea-09d82b110.2.azurestaticapps.net/",
+    category: "Healthcare",
+    status: "Live",
+  },
+  {
+    id: 2,
+    title: "Restaurant Management System",
+    description:
+      "Full-stack backend system for managing restaurant operations including reservations, orders, menu items, and staff coordination.",
+    technologies: ["Node.js", "Express", "Redux", "PostgreSQL"],
+    image: restaurant,
+    github:
+      "https://github.com/mwangaza12/restaurant_management_system_backend/",
+    live: "https://restaurnat-system.netlify.app/",
+    category: "Business",
+    status: "Live",
+  },
+  {
+    id: 3,
+    title: "School Management System",
+    description:
+      "Comprehensive educational platform to manage students, staff, classes, finances and academic records with advanced reporting.",
+    technologies: ["Laravel", "Filament", "MYSQL", "PHP"],
+    image:
+      "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=400&h=300&fit=crop&crop=center",
+    github: "https://github.com/mwangaza12/school-management-system",
+    live: "#",
+    category: "Education",
+    status: "Completed",
+  },
+  {
+    id: 4,
+    title: "Vehicle Rental System",
+    description:
+      "Responsive vehicle rental frontend where customers can browse available vehicles, make bookings, and pay securely online, with dashboard charts for tracking rentals.",
+    technologies: ["React", "TypeScript", "Redux", "Stripe", "Tailwind CSS"],
+    image: null, // vehicle
+    github: "https://github.com/mwangaza12/vehicle_rental_system_frontend",
+    live: "#",
+    category: "Transport",
+    status: "Development",
+  },
+  {
+    id: 5,
+    title: "Electronic Health Records App",
+    description:
+      "Cross-platform mobile EHR app for managing patient records. Works with a local database for offline use, syncs to the cloud when connected, and supports voice dictation for notes.",
+    technologies: ["Flutter", "Firebase", "Firestore", "SQLite"],
+    image: null, // ehr
+    github: "https://github.com/mwangaza12/ehr",
+    live: "#",
+    category: "Healthcare",
+    status: "Development",
+  },
+  {
+    id: 6,
+    // TODO: I couldn't open this repo, so the text below is a placeholder.
+    // Replace the description and technologies with the real details.
+    title: "Mchango App",
+    description:
+      "A platform for organising and tracking group contributions, making it easy to collect and follow up on contributions from members.",
+    technologies: [],
+    image: null, // mchango
+    github: "https://github.com/mwangaza12/mchango-app",
+    live: "#",
+    category: "Fintech",
+    status: "Development",
+  },
+];
+
+const getIcon = (tech) => {
+  if (tech.includes("React") || tech.includes("Node") || tech.includes("Flutter"))
+    return <Code className="w-3 h-3" />;
+  if (
+    tech.includes("MongoDB") ||
+    tech.includes("PostgreSQL") ||
+    tech.includes("Firestore") ||
+    tech.includes("SQLite")
+  )
+    return <Database className="w-3 h-3" />;
+  return <Globe className="w-3 h-3" />;
+};
+
+const getStatusColor = (status) => {
+  switch (status) {
+    case "Live":
+      return "bg-green-500/20 text-green-400 border-green-500/30";
+    case "Development":
+      return "bg-yellow-500/20 text-yellow-400 border-yellow-500/30";
+    case "Completed":
+      return "bg-blue-500/20 text-blue-400 border-blue-500/30";
+    default:
+      return "bg-gray-500/20 text-gray-400 border-gray-500/30";
+  }
+};
+
+export default function Projects() {
   return (
     <section id="projects" className="py-20 bg-gray-800 relative overflow-hidden">
       {/* Background Pattern */}
@@ -127,26 +171,32 @@ export default function Projects() {
             <Code className="w-4 h-4" />
             Projects
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 bg-gradient-to-r from-white to-gray-300 bg-clip-text">
             Featured Projects
           </h2>
         </AnimatedSection>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <AnimatedSection key={project.id} delay={index * 200}>
-              <div className="group relative">
+            <AnimatedSection key={project.id} delay={(index % 3) * 200}>
+              <div className="group relative h-full">
                 {/* Gradient Border */}
                 <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-sm"></div>
 
-                <div className="relative bg-gray-900 rounded-xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-500 border border-gray-700/50 group-hover:border-gray-600/50">
+                <div className="relative h-full flex flex-col bg-gray-900 rounded-xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-500 border border-gray-700/50 group-hover:border-gray-600/50">
                   {/* Image */}
-                  <div className="relative overflow-hidden h-48">
-                    <img
-                      src={project.image}
-                      alt={project.title}
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                    />
+                  <div className="relative overflow-hidden h-48 shrink-0">
+                    {project.image ? (
+                      <img
+                        src={project.image}
+                        alt={project.title}
+                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                      />
+                    ) : (
+                      <div className="w-full h-full bg-gradient-to-br from-gray-800 via-slate-800 to-gray-900 flex items-center justify-center">
+                        <Code className="w-12 h-12 text-blue-400/30" />
+                      </div>
+                    )}
 
                     {/* Overlay */}
                     <div className="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-gray-900/20 to-transparent"></div>
@@ -197,7 +247,7 @@ export default function Projects() {
                   </div>
 
                   {/* Content */}
-                  <div className="p-6">
+                  <div className="p-6 flex-1">
                     <h3 className="text-xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors">
                       {project.title}
                     </h3>
@@ -206,9 +256,9 @@ export default function Projects() {
                     </p>
 
                     <div className="flex flex-wrap gap-2">
-                      {project.technologies.map((tech, index) => (
+                      {project.technologies.map((tech) => (
                         <span
-                          key={index}
+                          key={tech}
                           className="inline-flex items-center gap-1.5 bg-gray-800/60 text-blue-400 text-xs px-3 py-1.5 rounded-lg border border-gray-700/50 hover:border-blue-500/30 transition-colors"
                         >
                           {getIcon(tech)}
