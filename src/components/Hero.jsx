@@ -8,9 +8,9 @@ const stats = [
 ];
 
 const socials = [
-  { icon: Github, href: "https://github.com/your-handle", label: "GitHub" },
-  { icon: Linkedin, href: "https://linkedin.com/in/your-handle", label: "LinkedIn" },
-  { icon: Mail, href: "mailto:you@example.com", label: "Email" },
+  { icon: Github, href: "https://github.com/mwangaza12", label: "GitHub" },
+  { icon: Linkedin, href: "https://linkedin.com/in/joseph-mwangaza", label: "LinkedIn" },
+  { icon: Mail, href: "mailto:you@josephmwangaza1@.gmail.com", label: "Email" },
 ];
 
 // TODO: edit these to match what you actually offer
