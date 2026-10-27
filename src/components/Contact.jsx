@@ -57,7 +57,7 @@ export default function Contact() {
     setToast({ message: "", type: "" });
 
     try {
-      const response = await fetch("https://email-server-setup.onrender.com/send-email", {
+      const response = await fetch("https://email-server-setup-pcst.onrender.com/send-email", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ ...formData, service: "Portfolio Contact Form" }),
