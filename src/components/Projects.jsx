@@ -2,11 +2,11 @@ import { useRef, useState, useEffect } from "react";
 import { ExternalLink, Github, Code, Database, Globe } from "lucide-react";
 import restaurant from "../assets/restaurant.png";
 import medical from "../assets/medical.png";
+import vehicle from "../assets/vehicle.png";
+import ehr from "../assets/ehr.png";
 
 // Once you have screenshots for the new projects, save them in src/assets,
 // uncomment the matching import, and replace `image: null` with the variable.
-// import vehicle from "../assets/vehicle.png";
-// import ehr from "../assets/ehr.png";
 // import mchango from "../assets/mchango.png";
 
 const useInView = (ref) => {
@@ -91,7 +91,7 @@ const projects = [
     description:
       "Responsive vehicle rental frontend where customers can browse available vehicles, make bookings, and pay securely online, with dashboard charts for tracking rentals.",
     technologies: ["React", "TypeScript", "Redux", "Stripe", "Tailwind CSS"],
-    image: null, // vehicle
+    image: vehicle,
     github: "https://github.com/mwangaza12/vehicle_rental_system_frontend",
     live: "#",
     category: "Transport",
@@ -102,8 +102,8 @@ const projects = [
     title: "Electronic Health Records App",
     description:
       "Cross-platform mobile EHR app for managing patient records. Works with a local database for offline use, syncs to the cloud when connected, and supports voice dictation for notes.",
-    technologies: ["Flutter", "Firebase", "Firestore", "SQLite"],
-    image: null, // ehr
+    technologies: ["dart", "Flutter", "Firebase", "Firestore", "SQLite"],
+    image: ehr,
     github: "https://github.com/mwangaza12/ehr",
     live: "#",
     category: "Healthcare",
@@ -111,13 +111,11 @@ const projects = [
   },
   {
     id: 6,
-    // TODO: I couldn't open this repo, so the text below is a placeholder.
-    // Replace the description and technologies with the real details.
     title: "Mchango App",
     description:
       "A platform for organising and tracking group contributions, making it easy to collect and follow up on contributions from members.",
-    technologies: [],
-    image: null, // mchango
+    technologies: ["Typescript","M-pesa","Express","React","Redux"],
+    image: null,
     github: "https://github.com/mwangaza12/mchango-app",
     live: "#",
     category: "Fintech",
