@@ -1,5 +1,6 @@
 import { useRef, useState, useEffect } from "react";
 import me from "../assets/professional.jpeg";
+import cv from "../assets/cv.pdf"
 
 const useInView = (ref) => {
   const [isInView, setIsInView] = useState(false);
@@ -97,7 +98,7 @@ export default function About() {
 
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
-                  href="#"
+                  href={cv}
                   className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-md font-medium transition-colors flex items-center justify-center"
                 >
                   Download Resume
