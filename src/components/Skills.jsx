@@ -179,7 +179,7 @@ export default function Skills() {
               return (
                 <AnimatedSection key={item.label} delay={200 + i * 100}>
                   <div className="flex items-center gap-4">
-                    <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gradient-to-r from-blue-500 to-purple-600 text-white shadow-lg">
+                    <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-blue-500 text-white shadow-lg">
                       <Icon size={18} />
                     </span>
                     <span className="text-base sm:text-lg text-gray-400">
