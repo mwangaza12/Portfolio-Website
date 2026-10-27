@@ -1,4 +1,5 @@
 import { Mail, Github, Linkedin, ArrowRight, ChevronDown, Download } from "lucide-react";
+import cv from "../assets/cv.pdf"
 
 // TODO: replace with your real numbers and links
 const stats = [
@@ -10,7 +11,7 @@ const stats = [
 const socials = [
   { icon: Github, href: "https://github.com/mwangaza12", label: "GitHub" },
   { icon: Linkedin, href: "https://linkedin.com/in/joseph-mwangaza", label: "LinkedIn" },
-  { icon: Mail, href: "mailto:you@josephmwangaza1@.gmail.com", label: "Email" },
+  { icon: Mail, href: "mailto:you@josephmwangaza1@gmail.com", label: "Email" },
 ];
 
 // TODO: edit these to match what you actually offer
@@ -135,7 +136,7 @@ export default function Hero() {
                   </ul>
                   <div className="my-5 h-px bg-gray-700"></div>
                   <a
-                    href="/cv.pdf"
+                    href={cv}
                     className="flex items-center justify-center gap-2 border border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white px-5 py-2.5 rounded-full text-sm font-medium transition-colors"
                   >
                     <Download size={16} /> Download CV
