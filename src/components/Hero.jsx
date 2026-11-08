@@ -70,7 +70,7 @@ export default function Hero() {
 
               <h1 className="font-extrabold leading-[1.05] tracking-tight text-4xl sm:text-5xl lg:text-6xl">
                 <span className="block text-blue-400">Software</span>
-                <span className="block text-white">Developer.</span>
+                <span className="block text-white">Engineer.</span>
               </h1>
 
               <p className="mt-6 text-gray-300 max-w-lg text-base lg:text-lg">
